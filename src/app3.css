@@ -1,0 +1,18 @@
+.app3{
+
+}
+.app3 .square{
+    width: 150px;
+    height: 150px;
+    border: 1px solid #000;
+    margin-top: 50px;
+}
+.app3 .square.active{
+    transform: translateX(200px);
+    border-radius: 50%;
+    transition: transform 1s;
+}
+.app3 .clearClass{
+    margin-top:10px;
+    padding:10px;
+}

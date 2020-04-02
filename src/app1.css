@@ -1,0 +1,10 @@
+.app1{
+    width: 50vw;
+    height: 50vh;
+    border:1px solid red;
+}
+.app1 > button{
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+}

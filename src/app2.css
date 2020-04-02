@@ -1,0 +1,27 @@
+.app2{
+    width: 50vw;
+    height: 50vh;
+    border: 1px solid blue;
+}
+.app2 > ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.app2 > ul > li{
+    border: 1px solid red;
+    padding:10px;
+    width: 50%;
+    text-align: center;
+    cursor: pointer;
+}
+.tabContent > div{
+    display: none;
+}
+.select{
+    background-color: #00FFFF;
+}
+.tabContent > div.active{
+    display: block;
+}

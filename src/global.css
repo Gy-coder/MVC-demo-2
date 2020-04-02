@@ -1,0 +1,12 @@
+body{
+    overflow: hidden;
+}
+body > .container{
+    display: flex;
+    flex-wrap: wrap;
+}
+body > .container > div{
+    width: 50vw;
+    height: 50vh;
+    border: 1px solid grey;
+}

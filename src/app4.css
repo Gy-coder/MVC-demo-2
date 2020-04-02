@@ -1,0 +1,22 @@
+.app4{}
+.app4 .circle{
+    width: 250px;
+    height: 250px;
+    border: 1px solid red;
+    position: relative;
+    left:50%;
+    margin-left: -125px;
+    top:20px;
+    border-radius: 50%;
+}
+.app4 .circle.active{
+    animation: wave 1s linear infinite;
+}
+@keyframes wave {
+    0%{
+        background-color: #00FFFF;
+    }
+    100%{
+        background-color: #00FF00;
+    }
+}
