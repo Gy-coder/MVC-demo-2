@@ -10,7 +10,7 @@
     border-radius: 50%;
 }
 .app4 .circle.active{
-    animation: wave 1s linear infinite;
+    animation: wave 3s linear infinite;
 }
 @keyframes wave {
     0%{

@@ -3,25 +3,26 @@
     height: 50vh;
     border: 1px solid blue;
 }
-.app2 > ul{
+.app2 >div> ul{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
 }
-.app2 > ul > li{
+.app2 >div> ul > li{
     border: 1px solid red;
     padding:10px;
     width: 50%;
     text-align: center;
     cursor: pointer;
 }
-.tabContent > div{
+.tabContent>div{
     display: none;
 }
-.select{
+.selected{
     background-color: #00FFFF;
 }
-.tabContent > div.active{
+.tabContent>.active{
+    border:1px solid red;
     display: block;
 }

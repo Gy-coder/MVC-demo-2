@@ -18,7 +18,7 @@ body > .container > div{
     height: 50vh;
     border:1px solid red;
 }
-.app1 > button{
+.app1 > div >button{
     padding: 10px;
     margin-top: 10px;
     margin-left: 10px;
@@ -28,26 +28,27 @@ body > .container > div{
     height: 50vh;
     border: 1px solid blue;
 }
-.app2 > ul{
+.app2 >div> ul{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
 }
-.app2 > ul > li{
+.app2 >div> ul > li{
     border: 1px solid red;
     padding:10px;
     width: 50%;
     text-align: center;
     cursor: pointer;
 }
-.tabContent > div{
+.tabContent>div{
     display: none;
 }
-.select{
+.selected{
     background-color: #00FFFF;
 }
-.tabContent > div.active{
+.tabContent>.active{
+    border:1px solid red;
     display: block;
 }
 .app3{
@@ -64,10 +65,6 @@ body > .container > div{
     border-radius: 50%;
     transition: transform 1s;
 }
-.app3 .clearClass{
-    margin-top:10px;
-    padding:10px;
-}
 
 .app4{}
 .app4 .circle{
@@ -81,7 +78,7 @@ body > .container > div{
     border-radius: 50%;
 }
 .app4 .circle.active{
-    animation: wave 1s linear infinite;
+    animation: wave 3s linear infinite;
 }
 @keyframes wave {
     0%{

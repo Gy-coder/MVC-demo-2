@@ -1,12 +1,22 @@
 import './app3.css'
 import $ from 'jquery'
+const html = `
+    <div class="app3">
+        <div class="square"></div>
+    </div>
+`
+const $html = $(html)
+$html.appendTo($('body>.container'))
 const $square = $('.app3 .square')
-const $button = $('.app3 .clearClass')
-$square.on('click',()=>{
-    console.log(1)
-    $square.addClass('active')
-})
+const active = localStorage.getItem('app3.active')=== 'yes' ? true : false
 
-$button.on('click',()=>{
-    $square.removeClass('active')
+$square.toggleClass('active',active)
+$square.on('click',()=>{
+    if($square.hasClass('active')){
+        $square.removeClass('active')
+        localStorage.setItem('app3.active','no')
+    }else{
+        $square.addClass('active')
+        localStorage.setItem('app3.active','yes')
+    }
 })
